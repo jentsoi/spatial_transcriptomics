@@ -94,7 +94,7 @@ def main():
         if os.path.isfile(image) == False:
             print('Error: Invalid image location at sample #{}<br>'.format(sampleNum))
             errorNum = errorNum +1
-        gprfile = '{}/{}.gpr'.format(image.rsplit('/',1)[1],slide)
+        gprfile = '{}/{}.gpr'.format(image.rsplit('/',1)[0],slide)
         if os.path.isfile(gprfile) == False:
             print('Error: Please place slide gpr file in same directory as image for sample #{}<br>'.format(sampleNum))
             errorNum = errorNum +1
