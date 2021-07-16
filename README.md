@@ -31,6 +31,9 @@ Notes:
 - Slide serial.gpr files should be in the same folder as image directory or else an error will be thrown.
 - Output directory name for the fastq files are taken from the fastq path, using the string after last '_' split.
 
+  
+Alternatively, can also run app.R shiny app to load in meta data to run script.
+
 
 ### 2. Run generated script to submit spaceranger qsub commands to the HPC
 
@@ -38,7 +41,7 @@ Notes:
 ./<sample_sheet_file>_<lane>_sample_proc.sh
 ```
 
-### 3. Run postprocessing scripts
+### 3. Run postprocessing scripts or submit as qsub job
 
 ```
 ./postproc_spaceranger.sh
